@@ -1,0 +1,31 @@
+{
+  "name": "bangumi-data-helper",
+  "version": "0.0.0",
+  "description": "Helper for Bangumi Data",
+  "bin": {
+    "bdh": "./bin/bdh.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bangumi-data/helper.git"
+  },
+  "keywords": [
+    "bangumi",
+    "anime"
+  ],
+  "author": "Zhenye Wei",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bangumi-data/helper/issues"
+  },
+  "homepage": "https://github.com/bangumi-data/helper#readme",
+  "dependencies": {
+    "cheerio": "^0.22.0",
+    "mkdirp": "^0.5.1",
+    "node-fetch": "^1.6.1",
+    "yargs": "^5.0.0"
+  }
+}
