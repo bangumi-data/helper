@@ -1,0 +1,20 @@
+{
+  "extends": "airbnb-base",
+  "env": {
+    "node": true
+  },
+  "rules": {
+    "no-restricted-syntax": 0,
+    "no-mixed-operators": 0,
+    "no-console": 0,
+    "no-continue": 0,
+    "func-names": 0,
+    "guard-for-in": 1,
+    "no-confusing-arrow": 1,
+    "no-param-reassign": 1,
+    "arrow-parens": [2, "as-needed"],
+    "space-before-function-paren": [2, "never"],
+    "comma-dangle": [2, "only-multiline"],
+    "dot-notation": [2, { "allowPattern": "^[a-z]+(_[a-z]+)+$|^[A-Z]" }]
+  }
+}

@@ -2,21 +2,24 @@
 
 const path = require('path');
 const yargs = require('yargs');
-const classify = require('../lib/classify.js');
 const create = require('../lib/create.js');
-const {merge, readJSON, writeJSON} = require('../lib/utils.js');
+const { merge, readJSON, writeJSON, classify } = require('../lib/utils.js');
 
-const DEFAULT_DIR = path.resolve(process.cwd(), './data/items');
+const DEFAULT_DIR = './data/items';
 const argv = yargs
-  .usage('Usage: $0 <command> [--focus|-f] [--output|-o ./data/items]')
+  .usage('Usage: bdh <command> [--focus|-f] [--output|-o ./data/items]')
   .command('create <season>', '生成某一季度的初始数据')
-  .example('$0 create 2016q4', '生成 2016 第三季度的数据')
+  .example('bdh create 2016q4', '生成 2016 第三季度的数据')
   // .command('update <id>', '更新指定番组的数据（ID 为 Bangumi ID）')
-  // .example('$0 update 140001', '更新 Bangumi ID 为 140001 番剧的数据')
+  // .example('bdh update 140001', '更新 Bangumi ID 为 140001 番剧的数据')
   .alias('f', 'focus')
   .describe('f', '强制覆写已存在的数据')
   .default('f', false)
   .global('f')
+  .alias('i', 'iutput')
+  .describe('i', '数据输入目录')
+  .default('i', DEFAULT_DIR)
+  .global('i')
   .alias('o', 'output')
   .describe('o', '数据输出目录')
   .default('o', DEFAULT_DIR)

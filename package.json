@@ -6,7 +6,10 @@
     "bdh": "./bin/bdh.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint bin lib",
+    "test": "npm run lint",
+    "preversion": "npm test",
+    "postversion": "git push && git push --tags && npm publish"
   },
   "repository": {
     "type": "git",
@@ -27,5 +30,10 @@
     "mkdirp": "^0.5.1",
     "node-fetch": "^1.6.1",
     "yargs": "^5.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.5.0",
+    "eslint-config-airbnb-base": "^7.1.0",
+    "eslint-plugin-import": "^1.15.0"
   }
 }
