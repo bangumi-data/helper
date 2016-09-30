@@ -28,12 +28,12 @@
   "dependencies": {
     "cheerio": "^0.22.0",
     "mkdirp": "^0.5.1",
-    "node-fetch": "^1.6.1",
+    "node-fetch": "^1.6.3",
     "yargs": "^5.0.0"
   },
   "devDependencies": {
-    "eslint": "^3.5.0",
-    "eslint-config-airbnb-base": "^7.1.0",
-    "eslint-plugin-import": "^1.15.0"
+    "eslint": "^3.6.1",
+    "eslint-config-airbnb-base": "^7.2.0",
+    "eslint-plugin-import": "^1.16.0"
   }
 }

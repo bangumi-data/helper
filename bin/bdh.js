@@ -47,5 +47,6 @@ if (argv._[0] === 'create') {
       }
       return sequence;
     })
-    .catch(console.log);
+    .catch(console.log)
+    .then(() => process.exit());
 }
