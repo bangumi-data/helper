@@ -9,7 +9,7 @@ const DEFAULT_DIR = './data/items';
 const argv = yargs
   .usage('Usage: bdh <command> [--focus|-f] [--output|-o ./data/items]')
   .command('create <season>', '生成某一季度的初始数据')
-  .example('bdh create 2016q4', '生成 2016 第三季度的数据')
+  .example('bdh create 2016q4', '生成 2016 第四季度的数据')
   // .command('update <id>', '更新指定番组的数据（ID 为 Bangumi ID）')
   // .example('bdh update 140001', '更新 Bangumi ID 为 140001 番剧的数据')
   .alias('f', 'focus')
