@@ -12,6 +12,6 @@ npm i bangumi-data-helper -g
 ```bash
 # 生成某一季度的初始数据
 bdh create 2016q4
-# [WIP] 更新特定番组的数据（Bangumi ID）
-# bdh update 140001
+# 更新某一月份的番组数据
+bdh update 201610
 ```

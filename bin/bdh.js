@@ -3,6 +3,7 @@
 const path = require('path');
 const yargs = require('yargs');
 const create = require('../lib/create.js');
+const update = require('../lib/update.js');
 const { merge, readJSON, writeJSON, classify } = require('../lib/utils.js');
 
 const DEFAULT_DIR = './data/items';
@@ -10,13 +11,13 @@ const argv = yargs
   .usage('Usage: bdh <command> [--focus|-f] [--output|-o ./data/items]')
   .command('create <season>', '生成某一季度的初始数据')
   .example('bdh create 2016q4', '生成 2016 第四季度的数据')
-  // .command('update <id>', '更新指定番组的数据（ID 为 Bangumi ID）')
-  // .example('bdh update 140001', '更新 Bangumi ID 为 140001 番剧的数据')
+  .command('update <month>', '更新某一月份的番组数据')
+  .example('bdh update 201610', '更新 2016 年 10 月的番剧数据')
   .alias('f', 'focus')
   .describe('f', '强制覆写已存在的数据')
   .default('f', false)
   .global('f')
-  .alias('i', 'iutput')
+  .alias('i', 'input')
   .describe('i', '数据输入目录')
   .default('i', DEFAULT_DIR)
   .global('i')
@@ -47,6 +48,13 @@ if (argv._[0] === 'create') {
       }
       return sequence;
     })
+    .catch(console.log)
+    .then(() => process.exit());
+}
+if (argv._[0] === 'update') {
+  const jsonPath = path.resolve(argv.input,
+    String(argv.month).replace(/(\d{4})(\d\d)/, '$1/$2.json'));
+  update(jsonPath, argv.focus)
     .catch(console.log)
     .then(() => process.exit());
 }
