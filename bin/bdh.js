@@ -8,7 +8,7 @@ const { merge, readJSON, writeJSON, classify } = require('../lib/utils.js');
 
 const DEFAULT_DIR = './data/items';
 const argv = yargs
-  .usage('Usage: bdh <command> [--focus|-f] [--output|-o ./data/items]')
+  .usage('Usage: bdh <command> [--focus|-f] [--input|-i ./data/items] [--output|-o ./data/items]')
   .command('create <season>', '生成某一季度的初始数据')
   .example('bdh create 2016q4', '生成 2016 第四季度的数据')
   .command('update <month>', '更新某一月份的番组数据')
