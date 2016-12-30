@@ -32,7 +32,7 @@ bdh update 201610
 
 | site     | begin | official | premuiumOnly |
 | -------- | ----- | -------- | ------------ |
-| acfun    | ✔     | ✖       | ✖            |
+| acfun    | ✖     | ✖       | ✖            |
 | bilibili | ✔     | ✔       | ✖            |
 | iqiyi    | ✔     | ✖       | ✖            |
 | kankan   | ✖     | ✖       | ✖            |
