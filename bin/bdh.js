@@ -34,7 +34,7 @@ const argv = yargs
 if (argv._[0] === 'create') {
   create(argv.season)
     .then(classify)
-    .then(data => {
+    .then((data) => {
       let sequence = Promise.resolve();
       for (const year in data) {
         for (const month in data[year]) {

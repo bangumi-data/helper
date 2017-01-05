@@ -4,17 +4,17 @@
     "node": true
   },
   "rules": {
-    "no-restricted-syntax": 0,
-    "no-mixed-operators": 0,
-    "no-console": 0,
-    "no-continue": 0,
-    "func-names": 0,
+    "comma-dangle": ["error", {
+      "arrays": "always-multiline",
+      "objects": "always-multiline",
+      "imports": "always-multiline",
+      "exports": "always-multiline",
+      "functions": "never"
+    }],
     "guard-for-in": 1,
-    "no-confusing-arrow": 1,
+    "no-console": 0,
+    "no-continue": 1,
     "no-param-reassign": 1,
-    "arrow-parens": [2, "as-needed"],
-    "space-before-function-paren": [2, "never"],
-    "comma-dangle": [2, "only-multiline"],
-    "dot-notation": [2, { "allowPattern": "^[a-z]+(_[a-z]+)+$|^[A-Z]" }]
+    "no-restricted-syntax": 1
   }
 }

@@ -29,7 +29,7 @@
     "cheerio": "^0.22.0",
     "mkdirp": "^0.5.1",
     "node-fetch": "^1.6.3",
-    "yargs": "^6.3.0"
+    "yargs": "^6.6.0"
   },
   "devDependencies": {
     "eslint": "^3.9.1",
