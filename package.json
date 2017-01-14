@@ -1,6 +1,6 @@
 {
   "name": "bangumi-data-helper",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Helper for Bangumi Data",
   "bin": {
     "bdh": "./bin/bdh.js"
