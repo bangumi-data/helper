@@ -1,5 +1,10 @@
 #!/usr/bin/env node
 
+const updateNotifier = require('update-notifier');
+const pkg = require('../package.json');
+
+updateNotifier({ pkg }).notify();
+
 const path = require('path');
 const yargs = require('yargs');
 const create = require('../lib/create.js');
