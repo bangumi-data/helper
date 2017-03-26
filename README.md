@@ -30,16 +30,17 @@ bdh update 201610
 
 下表列举了当前自动化情况，✔ 表示可以自动获取，✖ 表示不能，✍ 表示需要手动修改。
 
-| site     | begin | official | premuiumOnly |
-| -------- | ----- | -------- | ------------ |
-| acfun    | ✖     | ✖       | ✖            |
-| bilibili | ✔     | ✔       | ✔            |
-| iqiyi    | ✔     | ✖       | ✔            |
-| kankan   | ✖     | ✖       | ✖            |
-| letv     | ✖     | ✖       | ✖            |
-| mgtv     | ✍     | ✖       | ✔            |
-| pptv     | ✍     | ✖       | ✔            |
-| sohu     | ✍     | ✖       | ✖            |
-| qq       | ✍     | ✖       | ✖            |
-| tudou    | ✔     | ✔       | ✔            |
-| youku    | ✔     | ✔       | ✖            |
+| site      | begin | official | premuiumOnly |
+| --------- | ----- | -------- | ------------ |
+| acfun     | ✖     | ✖       | ✖           |
+| bilibili  | ✔     | ✔       | ✔           |
+| iqiyi     | ✔     | ✖       | ✔           |
+| kankan    | ✖     | ✖       | ✖           |
+| letv      | ✖     | ✖       | ✔           |
+| mgtv      | ✍     | ✖       | ✔           |
+| nicovideo | ✔     | ✔       | ✔           |
+| pptv      | ✍     | ✖       | ✔           |
+| sohu      | ✍     | ✖       | ✖           |
+| qq        | ✍     | ✖       | ✖           |
+| tudou     | ✔     | ✔       | ✔           |
+| youku     | ✔     | ✔       | ✔           |
