@@ -32,15 +32,15 @@ bdh update 201610
 
 | site      | begin | official | premuiumOnly |
 | --------- | ----- | -------- | ------------ |
-| acfun     | ✖     | ✖       | ✖           |
+| acfun     | ✖     | ✖       | ✔(false)    |
 | bilibili  | ✔     | ✔       | ✔           |
-| iqiyi     | ✔     | ✖       | ✔           |
-| kankan    | ✖     | ✖       | ✖           |
+| iqiyi     | ✔     | ✔(true) | ✔           |
+| kankan    | ✖     | ✖       | ✔(false)    |
 | letv      | ✖     | ✖       | ✔           |
 | mgtv      | ✍     | ✖       | ✔           |
-| nicovideo | ✔     | ✔       | ✔           |
+| nicovideo | ✔     | ✔(true) | ✔(true)     |
 | pptv      | ✍     | ✖       | ✔           |
-| sohu      | ✍     | ✖       | ✖           |
-| qq        | ✍     | ✖       | ✖           |
+| sohu      | ✍     | ✔(true) | ✔           |
+| qq        | ✍     | ✖       | ✔           |
 | tudou     | ✔     | ✔       | ✔           |
 | youku     | ✔     | ✔       | ✔           |
