@@ -27,14 +27,14 @@
   "homepage": "https://github.com/bangumi-data/helper#readme",
   "dependencies": {
     "cheerio": "^0.22.0",
-    "fs-extra": "^2.0.0",
+    "fs-extra": "^2.1.2",
     "node-fetch": "^1.6.3",
     "update-notifier": "^2.1.0",
-    "yargs": "^6.6.0"
+    "yargs": "^7.0.2"
   },
   "devDependencies": {
-    "eslint": "^3.16.1",
-    "eslint-config-airbnb-base": "^11.1.0",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.1.2",
     "eslint-plugin-import": "^2.2.0"
   }
 }
