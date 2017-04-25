@@ -12,6 +12,7 @@
       "functions": "never"
     }],
     "guard-for-in": 1,
+    "no-bitwise": 0,
     "no-console": 0,
     "no-continue": 1,
     "no-param-reassign": 1,

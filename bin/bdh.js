@@ -5,11 +5,9 @@ const pkg = require('../package.json');
 
 updateNotifier({ pkg }).notify();
 
-const path = require('path');
 const yargs = require('yargs');
 const create = require('../lib/create.js');
 const update = require('../lib/update.js');
-const { merge, readJSON, writeJSON, classify } = require('../lib/utils.js');
 
 const DEFAULT_DIR = './data/items';
 const argv = yargs
@@ -37,29 +35,12 @@ const argv = yargs
   .argv;
 
 if (argv._[0] === 'create') {
-  create(argv.season)
-    .then(classify)
-    .then((data) => {
-      let sequence = Promise.resolve();
-      for (const year in data) {
-        for (const month in data[year]) {
-          const jsonPath = path.resolve(argv.output, `${year}/${month}.json`);
-          sequence = sequence
-            .then(() => readJSON(jsonPath))
-            .then(items => merge(items, data[year][month], 'title', argv.focus))
-            .then(items => writeJSON(jsonPath, items))
-            .catch(console.log);
-        }
-      }
-      return sequence;
-    })
+  create(argv)
     .catch(console.log)
     .then(() => process.exit());
 }
 if (argv._[0] === 'update') {
-  const jsonPath = path.resolve(argv.input,
-    String(argv.month).replace(/(\d{4})(\d\d)/, '$1/$2.json'));
-  update(jsonPath, argv.focus)
+  update(argv)
     .catch(console.log)
     .then(() => process.exit());
 }
