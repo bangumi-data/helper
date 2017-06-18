@@ -1,5 +1,6 @@
 # Bangumi Data Helper
 
+[![Node version](https://img.shields.io/badge/node-%3E%3D%208.0.0-blue.svg)](https://nodejs.org)
 [![NPM version](https://img.shields.io/npm/v/bangumi-data-helper.svg)](https://www.npmjs.com/package/bangumi-data-helper)
 [![License](https://img.shields.io/npm/l/bangumi-data-helper.svg)](https://github.com/bangumi-data/helper/blob/master/LICENSE)
 

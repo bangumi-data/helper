@@ -25,16 +25,19 @@
     "url": "https://github.com/bangumi-data/helper/issues"
   },
   "homepage": "https://github.com/bangumi-data/helper#readme",
+  "engines": {
+    "node": ">= 8"
+  },
   "dependencies": {
     "cheerio": "^0.22.0",
-    "fs-extra": "^2.1.2",
-    "node-fetch": "^1.6.3",
-    "update-notifier": "^2.1.0",
-    "yargs": "^7.0.2"
+    "fs-extra": "^3.0.1",
+    "node-fetch": "^1.7.1",
+    "update-notifier": "^2.2.0",
+    "yargs": "^8.0.2"
   },
   "devDependencies": {
     "eslint": "^3.19.0",
-    "eslint-config-airbnb-base": "^11.1.2",
-    "eslint-plugin-import": "^2.2.0"
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.3.0"
   }
 }
