@@ -10,7 +10,7 @@ const create = require('../lib/create.js');
 const update = require('../lib/update.js');
 
 const DEFAULT_DIR = './data/items';
-const argv = yargs
+const { argv } = yargs
   .usage('Usage: bdh <command> [--focus|-f] [--input|-i ./data/items] [--output|-o ./data/items]')
   .command('create <season>', '生成某一季度的初始数据')
   .example('bdh create 2016q4', '生成 2016 第四季度的数据')
@@ -29,10 +29,7 @@ const argv = yargs
   .default('o', DEFAULT_DIR)
   .global('o')
   .alias('h', 'help')
-  .help()
-  .alias('v', 'version')
-  .version()
-  .argv;
+  .alias('v', 'version');
 
 if (argv._[0] === 'create') {
   create(argv)

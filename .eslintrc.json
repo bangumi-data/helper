@@ -4,18 +4,16 @@
     "node": true
   },
   "rules": {
-    "comma-dangle": ["error", {
-      "arrays": "always-multiline",
-      "objects": "always-multiline",
-      "imports": "always-multiline",
-      "exports": "always-multiline",
-      "functions": "never"
-    }],
-    "guard-for-in": 1,
+    "function-paren-newline": ["error", "consistent"],
+    "guard-for-in": 0,
     "no-bitwise": 0,
     "no-console": 0,
     "no-continue": 1,
     "no-param-reassign": 1,
-    "no-restricted-syntax": 1
+    "no-restricted-syntax": 0,
+    "object-curly-newline": ["error", {
+      "ObjectExpression": { "multiline": true, "consistent": true },
+      "ObjectPattern": { "multiline": true, "consistent": true }
+    }]
   }
 }
