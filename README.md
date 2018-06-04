@@ -57,6 +57,7 @@ bdh update 201610
 | kankan    | ✖    | ✖       | ✔           | ✖       | ✔    |
 | letv      | ✖    | ✖       | ✔           | ✖       | ✔    |
 | mgtv      | ✍     | ✖       | ✔           | ✖      | ✔    |
+| netflix   | ✔    | ✔(true) | ✔(true)     | ✖       | ✖    |
 | nicovideo | ✔    | ✔(true) | ✔(true)     | ✖       | ✔    |
 | pptv      | ✍     | ✔       | ✔           | ✖      | ✔    |
 | qq        | ✍     | ✖       | ✔           | ✖      | ✔    |
