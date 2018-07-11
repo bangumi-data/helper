@@ -45,6 +45,8 @@ bdh update 201610
 }
 ```
 
+其中 Bilibili 支持 `https://bangumi.bilibili.com/anime/24572` 和 `https://www.bilibili.com/bangumi/media/md103032` 两种格式。
+
 在当前文件修改完后，可以运行 `bdh update <month>`，该指令会把当前文件所有番剧的 `sites` 数组处理成符合规范的格式。注意，由于部分站点放送开始时间为无规律的中文，难以用程序解析，需要手动转换。
 
 下表列举了当前自动化情况，✔ 表示可以自动获取，✖ 表示不能，✍ 表示需要手动修改。
