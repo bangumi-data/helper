@@ -35,7 +35,6 @@ bdh hokan iqiyi
 
 ### `bdh update <month>`
 
-
 在添加维护放送站点信息时，可以在 `sites` 数组中添加[番剧页面链接](https://github.com/bangumi-data/bangumi-data/blob/master/CONTRIBUTING.md#%E7%AB%99%E7%82%B9-url-%E6%8B%BC%E6%8E%A5)或包含 `site` 和 `id` 信息的对象，例如：
 
 ```js
@@ -75,7 +74,7 @@ hokan 即为补完（[番組補完計画](https://github.com/bangumi-data/bangum
 | letv      | ✖️    | ✖️       | ✔️           | ✖️       | ✔️    | ✔️  |
 | mgtv      | ⭕    | ✖️       | ✔️           | ✖️       | ✔️    | ✔️  |
 | netflix   | ✔️    | ✔️(true) | ✔️(true)     | ✖️       | ✖️    | ✖️  |
-| nicovideo | ✔️    | ✔️(true) | ✔️(true)     | ✖️       | ✔️    | ✖️  |
+| nicovideo | ✔️    | ✔️(true) | ✔️(true)     | ✖️       | ✔️    | ✔️  |
 | pptv      | ⭕    | ✔️       | ✔️           | ✖️       | ✔️    | ✔️  |
 | qq        | ⭕    | ✖️       | ✔️           | ✖️       | ✔️    | ✔️  |
 | sohu      | ⭕    | ✔️(true) | ✔️           | ✖️       | ✔️    | ✔️  |
