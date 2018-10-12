@@ -317,3 +317,5 @@ higurashi-pj
 ebiten
 primetime
 squash
+7-taizai-fes-night
+7-taizai-fes-day
