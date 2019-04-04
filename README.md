@@ -27,6 +27,8 @@ bdh create 2016q4
 bdh update 201610
 # 补完某站的所有番剧
 bdh hokan iqiyi
+# 使用代理
+HTTP_PROXY=http://127.0.0.1:1087 bdh hokan nicovideo
 ```
 
 ### `bdh create <season>`
