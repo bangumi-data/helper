@@ -34,18 +34,18 @@
     "node": ">= 8"
   },
   "dependencies": {
-    "cheerio": "^1.0.0-rc.2",
-    "fs-extra": "^7.0.1",
-    "https-proxy-agent": "^2.2.1",
+    "cheerio": "^1.0.0-rc.3",
+    "fs-extra": "^8.1.0",
+    "https-proxy-agent": "^2.2.2",
     "klaw": "^3.0.0",
-    "node-fetch": "^2.3.0",
+    "node-fetch": "^2.6.0",
     "ora": "^3.4.0",
-    "update-notifier": "^2.5.0",
-    "yargs": "^13.2.2"
+    "update-notifier": "^3.0.1",
+    "yargs": "^13.3.0"
   },
   "devDependencies": {
-    "eslint": "^5.16.0",
-    "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.16.0"
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-plugin-import": "^2.18.2"
   }
 }
