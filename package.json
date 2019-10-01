@@ -31,7 +31,7 @@
   },
   "homepage": "https://github.com/bangumi-data/helper#readme",
   "engines": {
-    "node": ">= 8"
+    "node": ">= 12"
   },
   "dependencies": {
     "cheerio": "^1.0.0-rc.3",
@@ -39,13 +39,13 @@
     "https-proxy-agent": "^2.2.2",
     "klaw": "^3.0.0",
     "node-fetch": "^2.6.0",
-    "ora": "^3.4.0",
+    "ora": "^4.0.2",
     "update-notifier": "^3.0.1",
-    "yargs": "^13.3.0"
+    "yargs": "^14.0.0"
   },
   "devDependencies": {
-    "eslint": "^6.1.0",
-    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint": "^6.5.1",
+    "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.18.2"
   }
 }

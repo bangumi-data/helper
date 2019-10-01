@@ -55,13 +55,13 @@ HTTP_PROXY=http://127.0.0.1:1087 bdh hokan nicovideo
 }
 ```
 
-在当前文件修改完后，可以运行该指令把当前文件所有番剧的 `sites` 数组处理成符合规范的格式。注意，由于部分站点放送开始时间为无规律的中文，难以用程序解析，需要手动转换。
+在当前文件修改完后，可以运行该指令把当前文件所有番剧的 `sites` 数组处理成符合规范的格式，非模型定义的字段会被自动去除。注意，由于部分站点放送开始时间为无规律的中文，难以用程序解析，需要手动转换。
 
 ### `bdh hokan <site>`
 
 hokan 即为补完（[番組補完計画](https://github.com/bangumi-data/bangumi-data/issues/11)），其工作模式为：爬取到某站所有的番剧数据，然后自动过滤掉已存在于 bangumi-data 的番剧和[排除列表](https://github.com/bangumi-data/helper/tree/master/exclusions)里的番剧，剩下的就是待添加或待排除的番剧。
 
-执行该指令后，会在 `data/items/0000/<site>.json` 下输出待补完数据。复制 `copyIt` 字段的值到 `sites` 数组中按 `bdh update <month>` 继续后续流程。对于非正常番剧（如乱入的[站方自制节目](https://www.iqiyi.com/a_19rrh5w971.html)、特典、广播剧、舞台剧、特摄、真人版等），请 PR 添加到[排除列表](https://github.com/bangumi-data/helper/tree/master/exclusions)。
+执行该指令后，会在 `data/items/0000/<site>.json` 下输出待补完数据。复制番剧对象到 `sites` 数组中按 `bdh update <month>` 继续后续流程。对于非正常番剧（如乱入的[站方自制节目](https://www.iqiyi.com/a_19rrh5w971.html)、特典、广播剧、舞台剧、特摄、真人版等），请 PR 添加到[排除列表](https://github.com/bangumi-data/helper/tree/master/exclusions)。
 
 ### `bdh end`
 
