@@ -25,6 +25,8 @@ bdh --help
 bdh create 2016q4
 # 更新某月的番组数据
 bdh update 201610
+# 手动增加某月的放送站点
+bdh site 201610
 # 补完某站的所有番剧
 bdh hokan iqiyi
 # 补充所有 end 字段为空的番剧
@@ -56,6 +58,10 @@ HTTP_PROXY=http://127.0.0.1:1087 bdh hokan nicovideo
 ```
 
 在当前文件修改完后，可以运行该指令把当前文件所有番剧的 `sites` 数组处理成符合规范的格式，非模型定义的字段会被自动去除。注意，由于部分站点放送开始时间为无规律的中文，难以用程序解析，需要手动转换。
+
+### `bdh site <month>`
+
+使用命令行交互手动添加番剧放送站点信息。
 
 ### `bdh hokan <site>`
 
