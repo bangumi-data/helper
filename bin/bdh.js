@@ -10,6 +10,7 @@ const create = require('../lib/commands/create.js');
 const end = require('../lib/commands/end.js');
 const hokan = require('../lib/commands/hokan.js');
 const update = require('../lib/commands/update.js');
+const edit = require('../lib/commands/edit.js');
 
 const DEFAULT_DIR = './data/items';
 
@@ -20,6 +21,8 @@ const { argv } = yargs
   .example('bdh create 2016q4', '生成 2016 第四季度的数据')
   .command('update <month>', '更新某月的番组数据', {}, update)
   .example('bdh update 201610', '更新 2016 年 10 月的番剧数据')
+  .command('edit <month>', '手动增加某月的放送站点', {}, edit)
+  .example('bdh edit 201610', '增手动增加 2016 年 10 月的放送站点')
   .command('hokan <site>', '补完某站的所有番剧数据', {}, hokan)
   .example('bdh hokan iqiyi', '补完 iqiyi 的所有番剧数据')
   .command('end', '补充所有 end 字段为空的番剧', {}, end)
