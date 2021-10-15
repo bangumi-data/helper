@@ -46,7 +46,8 @@
     "node-fetch": "^2.6.0",
     "ora": "^4.0.4",
     "update-notifier": "^4.1.0",
-    "yargs": "^15.4.0"
+    "yargs": "^15.4.0",
+    "youtubei": "^0.0.1-rc.27"
   },
   "devDependencies": {
     "eslint": "^7.4.0",
