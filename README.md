@@ -89,4 +89,6 @@ hokan 即为补完（[番組補完計画](https://github.com/bangumi-data/bangum
 | pptv      | ⭕    | ✔️  |
 | qq        | ⭕    | ✔️  |
 | sohu      | ⭕    | ✔️  |
+| viu       | ✔️    | ✔️  |
 | youku     | ✔️    | ✔️  |
+| youtube   | ⭕    | ✔️  |
