@@ -47,7 +47,7 @@
     "ora": "^4.0.4",
     "update-notifier": "^4.1.0",
     "yargs": "^15.4.0",
-    "youtubei": "^1.0.0-rc.5"
+    "youtubei": "^1.1.2"
   },
   "devDependencies": {
     "eslint": "^7.4.0",
