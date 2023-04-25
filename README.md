@@ -77,22 +77,22 @@ hokan 即为补完（[番組補完計画](https://github.com/bangumi-data/bangum
 
 下表列举了当前自动化情况，✔️表示可以自动获取，✖️表示不能，⭕表示需要手动修改。
 
-| site      | begin | 补完 |
-| --------- | ----- | --- |
-| acfun     | ✔️    | ✔️  |
-| bilibili  | ✔️    | ✔️  |
-| iqiyi     | ✔️    | ✔️  |
-| letv      | ✖️    | ✔️  |
-| mgtv      | ✔️    | ✔️  |
-| netflix   | ✔️    | ✔️❓|
-| nicovideo | ✔️    | ✔️  |
-| pptv      | ⭕    | ✔️  |
-| qq        | ⭕    | ✔️  |
-| sohu      | ⭕    | ✔️  |
-| gamer     | ✔️    | ✔️  |
-| viu       | ✔️    | ✔️  |
-| youku     | ✔️    | ✔️  |
-| youtube   | ⭕    | ✔️  |
-| mytv      | ✔️    | ✔️  |
-| disneyplus| ✖️    | ✔️  |
-| nowPlayer | ✖️    | ✔️  |
+| site      | begin | 补完 | 自动匹配现有番组 |
+| --------- | ----- | --- | --------------- |
+| acfun     | ✔️    | ✔️  | ✖️             |
+| bilibili  | ✔️    | ✔️  | ✖️             |
+| iqiyi     | ✔️    | ✔️  | ✖️             |
+| letv      | ✖️    | ✔️  | ✖️             |
+| mgtv      | ✔️    | ✔️  | ✖️             |
+| netflix   | ✔️    | ✔️❓| ✔️             |
+| nicovideo | ✔️    | ✔️  | ✖️             |
+| pptv      | ⭕    | ✔️  | ✖️             |
+| qq        | ⭕    | ✔️  | ✖️             |
+| sohu      | ⭕    | ✔️  | ✖️             |
+| gamer     | ✔️    | ✔️  | ✔️             |
+| viu       | ✔️    | ✔️  | ✔️             |
+| youku     | ✔️    | ✔️  | ✔️             |
+| youtube   | ⭕    | ✔️  | ✔️             |
+| mytv      | ✔️    | ✔️  | ✔️             |
+| disneyplus| ✖️    | ✔️  | ✔️             |
+| nowPlayer | ✖️    | ✔️  | ✔️             |
