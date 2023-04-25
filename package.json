@@ -45,6 +45,9 @@
     "lodash": "^4.17.21",
     "node-fetch": "^2.6.0",
     "ora": "^4.0.4",
+    "puppeteer": "^19.9.1",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
     "update-notifier": "^4.1.0",
     "yargs": "^15.4.0",
     "youtubei": "^1.1.2"
