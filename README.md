@@ -80,7 +80,10 @@ hokan 即为补完（[番組補完計画](https://github.com/bangumi-data/bangum
 | site      | begin | 补完 | 自动匹配现有番组 |
 | --------- | ----- | --- | --------------- |
 | acfun     | ✔️    | ✔️  | ✖️             |
-| bilibili  | ✔️    | ✔️  | ✖️             |
+| bilibili  | ✔️    | ✔️  | ✔️             |
+| bilibili_hk_mo_tw |✔️|✔️| ✔️             |
+| bilibili_hk_mo| ✔️| ✔️  | ✔️             |
+| bilibili_tw | ✔️  | ✔️  | ✔️             |
 | iqiyi     | ✔️    | ✔️  | ✖️             |
 | letv      | ✖️    | ✔️  | ✖️             |
 | mgtv      | ✔️    | ✔️  | ✖️             |
