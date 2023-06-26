@@ -94,7 +94,7 @@ hokan 即为补完（[番組補完計画](https://github.com/bangumi-data/bangum
 | sohu      | ⭕    | ✔️  | ✖️             |
 | gamer     | ✔️    | ✔️  | ✔️             |
 | viu       | ✔️    | ✔️  | ✔️             |
-| youku     | ✔️    | ✔️  | ✔️             |
+| youku     | ✔️    | ✔️  | ✖️             |
 | youtube   | ⭕    | ✔️  | ✔️             |
 | mytv      | ✔️    | ✔️  | ✔️             |
 | disneyplus| ✖️    | ✔️  | ✔️             |
