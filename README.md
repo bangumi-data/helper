@@ -25,6 +25,12 @@ bdh --help
 bdh create 2016q4
 # 更新某月的番组数据
 bdh update 201610
+# 根据bangumi添加番剧数据
+bdh add 207195
+# 根据bangumi添加番剧数据, 并同时添加1个放送站点
+bdh add 207195 nicovideo:yurucamp
+# 根据bangumi添加番剧数据, 并同时添加多个放送站点
+bdh add 207195 nicovideo:yurucamp gamer:89804
 # 交互式地手动增加某月的放送站点
 bdh edit 201610
 # 补完某站的所有番剧
@@ -58,6 +64,10 @@ HTTP_PROXY=http://127.0.0.1:1087 bdh hokan nicovideo
 ```
 
 在当前文件修改完后，可以运行该指令把当前文件所有番剧的 `sites` 数组处理成符合规范的格式，非模型定义的字段会被自动去除。注意，由于部分站点放送开始时间为无规律的中文，难以用程序解析，需要手动转换。
+
+### `bdh add <bangumiId> [siteList..]`
+
+根据Bangumi上的数据添加番剧数据, 可以同时添加放送站点信息。
 
 ### `bdh edit <month>`
 
