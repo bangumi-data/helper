@@ -47,9 +47,7 @@
     "node-fetch": "^2.6.0",
     "opencc-js": "^1.0.5",
     "ora": "^4.0.4",
-    "puppeteer": "^21.5.1",
-    "puppeteer-extra": "^3.3.6",
-    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "puppeteer-real-browser": "^1.1.7",
     "update-notifier": "^4.1.0",
     "yargs": "^15.4.0",
     "youtubei": "^1.2.0"
