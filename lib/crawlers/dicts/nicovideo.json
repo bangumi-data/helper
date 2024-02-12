@@ -4050,7 +4050,7 @@
     "pripri-anime-movie": null,
     "pluto-anime": null,
     "blue-period": null,
-    "bullbuster": null,
+    "bullbuster": "bullbuster",
     "breakers-anime": null,
     "heike-anime": null,
     "beybladegt": null,
@@ -4062,7 +4062,7 @@
     "s-rank-musume": null,
     "aniakingdom": null,
     "po-town": null,
-    "bokuyaba-anime2": null,
+    "bokuyaba-anime2": "bokuyaba-anime2",
     "bokuhaka-anime": null,
     "7dayswar": null,
     "baby-bears": null,
@@ -4162,6 +4162,7 @@
     "one-room3": null,
     "wotakoi-anime": null,
     "kigurumigirl": null,
-    "meijigekken1874": null
+    "meijigekken1874": null,
+    "wonderful-precure": null
   }
 }
