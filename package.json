@@ -47,10 +47,10 @@
     "node-fetch": "^2.6.0",
     "opencc-js": "^1.0.5",
     "ora": "^4.0.4",
-    "puppeteer-real-browser": "^1.1.7",
+    "puppeteer-real-browser": "^1.2.16",
     "update-notifier": "^4.1.0",
     "yargs": "^15.4.0",
-    "youtubei": "^1.2.0"
+    "youtubei": "^1.4.1"
   },
   "devDependencies": {
     "eslint": "^7.4.0",
