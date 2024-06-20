@@ -37,6 +37,8 @@ bdh edit 201610
 bdh hokan iqiyi
 # 补充所有 end 字段为空的番剧
 bdh end
+# 清理已下架番组
+bdh cleanup bilibili
 # 使用代理
 HTTP_PROXY=http://127.0.0.1:1087 bdh hokan nicovideo
 ```
@@ -83,32 +85,36 @@ hokan 即为补完（[番組補完計画](https://github.com/bangumi-data/bangum
 
 运行该指令将寻找所有 end 字段为空的番剧并尝试补充。只会补充放送结束时间在本月之前的番剧，也就是说，某番剧本月 1 日完结，在本月 30 日运行该指令是无效的。
 
+### `bdh cleanup <site>`
+
+清理某站已下架番组，其工作模式为：爬取该站`hokan`的番剧数据，然后比对存在于bangumi-data 的番剧，擭得可能已下架的番剧，在再次确定已下架后从番剧数据中清除
+
 ## Status
 
 下表列举了当前自动化情况，✔️表示可以自动获取，✖️表示不能，⭕表示需要手动修改。
 
-| site      | begin | 补完 | 自动匹配现有番组 |
-| --------- | ----- | --- | --------------- |
-| acfun     | ✔️    | ✔️  | ✖️             |
-| bilibili  | ✔️    | ✔️  | ✔️             |
-| bilibili_hk_mo_tw |✔️|✔️| ✔️             |
-| bilibili_hk_mo| ✔️| ✔️  | ✔️             |
-| bilibili_tw | ✔️  | ✔️  | ✔️             |
-| iqiyi     | ✔️    | ✔️  | ✖️             |
-| letv      | ✖️    | ✔️  | ✖️             |
-| mgtv      | ✔️    | ✔️  | ✖️             |
-| netflix   | ✔️    | ✔️❓| ✔️             |
-| nicovideo | ✔️    | ✔️  | ✔️             |
-| pptv      | ⭕    | ✔️  | ✖️             |
-| qq        | ⭕    | ✔️  | ✖️             |
-| sohu      | ⭕    | ✔️  | ✖️             |
-| gamer     | ✔️    | ✔️  | ✔️             |
-| gamer_hk  | ✔️    | ✔️  | ✔️             |
-| viu       | ✔️    | ✔️  | ✔️             |
-| youku     | ✔️    | ✔️  | ✖️             |
-| youtube   | ⭕    | ✔️  | ✔️             |
-| mytv      | ✔️    | ✔️  | ✔️             |
-| disneyplus| ✖️    | ✔️  | ✔️             |
-| nowPlayer | ✖️    | ✔️  | ✔️             |
-| unext     | ✔️    | ✔️  | ✔️             |
-| abema     | ✖️    | ✔️  | ✔️             |
+| site      | begin | 补完 | 自动匹配现有番组 | 清理 |
+| --------- | ----- | --- | --------------- | ---- |
+| abema     | ✖️    | ✔️  | ✔️             | ✖️  |
+| acfun     | ✔️    | ✔️  | ✖️             | ✖️  |
+| bilibili  | ✔️    | ✔️  | ✔️             | ✔️  |
+| bilibili_hk_mo_tw |✔️|✔️| ✔️             | ✖️  |
+| bilibili_hk_mo| ✔️| ✔️  | ✔️             | ✖️  |
+| bilibili_tw | ✔️  | ✔️  | ✔️             | ✖️  |
+| disneyplus| ✖️    | ✔️  | ✔️             | ✖️  |
+| gamer     | ✔️    | ✔️  | ✔️             | ✖️  |
+| gamer_hk  | ✔️    | ✔️  | ✔️             | ✖️  |
+| iqiyi     | ✔️    | ✔️  | ✖️             | ✖️  |
+| letv      | ✖️    | ✔️  | ✖️             | ✖️  |
+| mgtv      | ✔️    | ✔️  | ✖️             | ✖️  |
+| mytv      | ✔️    | ✔️  | ✔️             | ✖️  |
+| netflix   | ✔️    | ✔️❓| ✔️             | ✖️  |
+| nicovideo | ✔️    | ✔️  | ✔️             | ✖️  |
+| pptv      | ⭕    | ✔️  | ✖️             | ✖️  |
+| qq        | ⭕    | ✔️  | ✖️             | ✖️  |
+| sohu      | ⭕    | ✔️  | ✖️             | ✖️  |
+| unext     | ✔️    | ✔️  | ✔️             | ✖️  |
+| viu       | ✔️    | ✔️  | ✔️             | ✖️  |
+| youku     | ✔️    | ✔️  | ✖️             | ✖️  |
+| youtube   | ⭕    | ✔️  | ✔️             | ✖️  |
+| nowPlayer | ✖️    | ✔️  | ✔️             | ✖️  |
