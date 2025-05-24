@@ -26,6 +26,7 @@ const { argv } = yargs
     ['bdh update 201610', '更新 2016 年 10 月的番剧中，全部现有放送站点的数据'],
     ['bdh update 201610 nicovideo', '更新 2016 年 10 月的番剧中，nicovideo站点的数据'],
     ['bdh update 201610 nicovideo gamer', '更新 2016 年 10 月的番剧中，nicovideo与gamer站点的数据'],
+    ['bdh update 201610 gamer*', '更新 2016 年 10 月的番剧中，gamer与gamer_hk站点的数据'],
   ])
   .command('edit <month>', '交互式地编辑某月的番剧数据', {}, edit)
   .example('bdh edit 201610', '交互式地 2016 年 10 月的番剧数据的放送站点')
