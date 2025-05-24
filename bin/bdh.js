@@ -37,17 +37,26 @@ const { argv } = yargs
   .example('bdh end', '补充所有 end 字段为空的番剧')
   .command('cleanup <site>', '清理已下架番剧', {}, cleanup)
   .example('bdh cleanup', '清理已下架番剧')
-  .alias('f', 'force')
-  .describe('f', '强制覆写已存在的数据')
-  .default('f', false)
-  .global('f')
-  .alias('i', 'input')
-  .describe('i', '数据输入目录')
-  .default('i', DEFAULT_DIR)
-  .global('i')
-  .alias('o', 'output')
-  .describe('o', '数据输出目录')
-  .default('o', DEFAULT_DIR)
-  .global('o')
+  .option('f', {
+    alias: 'force',
+    type: 'boolean',
+    describe: '强制覆写已存在的数据',
+    default: false,
+    global: true,
+  })
+  .option('i', {
+    alias: 'input',
+    type: 'string',
+    describe: '数据输入目录',
+    default: DEFAULT_DIR,
+    global: true,
+  })
+  .option('o', {
+    alias: 'output',
+    type: 'string',
+    describe: '数据输出目录',
+    default: DEFAULT_DIR,
+    global: true,
+  })
   .alias('h', 'help')
   .alias('v', 'version');
