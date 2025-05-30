@@ -13,6 +13,7 @@ const update = require('../lib/commands/update.js');
 const edit = require('../lib/commands/edit.js');
 const add = require('../lib/commands/add.js');
 const cleanup = require('../lib/commands/cleanup.js');
+const { validate, strategies } = require('../lib/commands/validate.js');
 
 const DEFAULT_DIR = './data/items';
 
@@ -45,6 +46,16 @@ const { argv } = yargs
     ['bdh add 207195 nicovideo:yurucamp', '添加《ゆるキャン△》, 并同时添加1个放送站点'],
     ['bdh add 207195 nicovideo:yurucamp gamer:89804', '添加《ゆるキャン△》, 并同时添加多个放送站点'],
   ])
+  .command(
+    'validate <strategy>',
+    '按指定策略进行核查，并对核查结果进行交互式编辑',
+    yargs => yargs.positional('strategy', {
+      describe: '策略名称',
+      choices: strategies,
+    }),
+    validate
+  )
+  .example('bdh validate youtubeBeforeDefault', '基于 youtubeBeforeDefault 策略对站点数据进行核查')
   .command('hokan <site>', '补完某站的所有番剧数据', {}, hokan)
   .example('bdh hokan iqiyi', '补完 iqiyi 的所有番剧数据')
   .command('end', '补充所有 end 字段为空的番剧', {}, end)
