@@ -24,8 +24,22 @@ const { argv } = yargs
   .example('bdh create 2016q4', '生成 2016 第四季度的数据')
   .command('update <month>', '更新某月的番组数据', {}, update)
   .example('bdh update 201610', '更新 2016 年 10 月的番剧数据')
-  .command('edit <month>', '交互式地编辑某月的番剧数据', {}, edit)
-  .example('bdh edit 201610', '交互式地 2016 年 10 月的番剧数据的放送站点')
+  .command(
+    'edit <month> [siteList..]',
+    '交互式地编辑某月的番剧数据',
+    yargs => yargs.option('useFilter', {
+      type: 'boolean',
+      describe: '过滤不包含 siteList 内已有站点的番剧',
+      default: false,
+    }),
+    edit
+  )
+  .example([
+    ['bdh edit 201610', '交互式地编辑 2016 年 10 月的番剧数据的所有放送站点'],
+    ['bdh edit 201610 nicovideo', '交互式地编辑 2016 年 10 月的番剧数据的nicovideo站点'],
+    ['bdh edit 201610 nicovideo gamer', '交互式地编辑 2016 年 10 月的番剧数据的nicovideo与gamer站点'],
+    ['bdh edit 201610 gamer*', '交互式地编辑 2016 年 10 月的番剧数据的gamer与gamer_hk站点'],
+  ])
   .command('add <bangumiId> [siteList..]', '根据bangumi添加番剧数据', {}, add)
   .example([
     ['bdh add 207195', '添加《ゆるキャン△》'],
