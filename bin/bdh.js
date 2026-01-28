@@ -52,11 +52,15 @@ const { argv } = yargs
     ['bdh add 207195 nicovideo:yurucamp gamer:89804', '添加《ゆるキャン△》, 并同时添加多个放送站点'],
   ])
   .command(
-    'validate <strategy>',
+    'validate <strategy> [month]',
     '按指定策略进行核查，并对核查结果进行交互式编辑',
     yargs => yargs.positional('strategy', {
       describe: '策略名称',
       choices: strategies,
+    })
+    .positional('month', {
+      describe: '月份, 格式为 YYYYMM 或 YYYYMM-YYYYMM',
+      type: 'string',
     }),
     validate
   )
