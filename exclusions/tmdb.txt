@@ -4,3 +4,5 @@ tv/36067/season/3
 tv/74083/season/0
 tv/69288/season/0
 tv/66053/season/0
+tv/67676/season/0
+tv/35871/season/0
