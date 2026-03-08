@@ -667,3 +667,4 @@ yukarisama
 fate-gc2
 QCPlay
 ijigen-fes
+aqours-documentary
