@@ -347,3 +347,9 @@ tv/62273/season/0/episode/2
 tv/95135
 movie/1123871
 tv/155051
+tv/87978/season/3
+movie/526574
+tv/67034
+movie/541867
+tv/254987
+movie/1333100
