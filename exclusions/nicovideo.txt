@@ -12,9 +12,7 @@ seigura-radio
 night-charapedia
 minorihonokareinanopanasai
 ewg-ewg
-witches-ch
 ak-republic
-nicogirl
 tsukasa-fushimi
 animestyle
 fate-go
@@ -41,11 +39,9 @@ comic_iowl2
 riskit
 noriko-iiyone
 bokulaku
-dokoque2
 tomozaki-kun
 wakuwaku-kids
 higewosoruch
-ensemble_stars_dream_live3
 hakuoki-musical
 vivi-villain
 wsy-idolls
@@ -58,11 +54,9 @@ m-78_trigger
 isekaimaou-omega-wshokan2
 isekaimaou-omega-wshokan1
 pripara_friendship_2020
-ch2629892
 away
 kimetsunoutage
 hello-prichan-world
-new-sakura-taisen-stage
 NextStarsCircle
 dogengers_
 tiramisu2-stage
@@ -216,7 +210,6 @@ aoyamaoperetta-stage2
 paradox-live
 paradoxlive-stage
 aoyamaoperetta-stage
-roots
 mfg_bd_anime
 dokoque3
 norazo-japan
@@ -232,4 +225,6 @@ fate-gc2
 QCPlay
 ijigen-fes
 aqours-documentary
-anime-japan-2026-creator
+anime-japan-2026-creator
+dogengers7
+ultraman-teo
